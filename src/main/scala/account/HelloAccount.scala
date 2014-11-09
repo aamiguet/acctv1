@@ -13,7 +13,7 @@ object HelloAccount extends App {
     account += (None, "antoine")
     account += (None, "alfred")
     
-    val accounts: List[(Option[Int], String)] = account.list
+    val accounts: List[(Option[Long], String)] = account.list
     
     accounts foreach {
       case (Some(id), name) => println(s"Account of $name, $id")
